@@ -1,0 +1,63 @@
+Proje 2
+
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+Merge Sort, diziyi sürekli ikiye böler, sonra da sıralayarak birleştirir.
+
+1. Bölme Aşaması:
+[16, 21, 11, 8, 12, 22] → ikiye böl:
+
+Sol: [16, 21, 11]
+
+Sağ: [8, 12, 22]
+
+2. Alt Bölme:
+Sol [16, 21, 11]:
+Böl: [16] ve [21, 11]
+
+[21, 11] → Böl: [21] ve [11]
+
+Sağ [8, 12, 22]:
+Böl: [8] ve [12, 22]
+
+[12, 22] → Böl: [12] ve [22]
+
+Birleştirme ve Sıralama Aşaması:
+3. En küçük parçaları birleştirerek sıralı hale getiriyoruz:
+Sol:
+[21] + [11] → [11, 21]
+
+[16] + [11, 21] → Sıralı birleştir: [11, 16, 21]
+
+Sağ:
+[12] + [22] → [12, 22]
+
+[8] + [12, 22] → Sıralı birleştir: [8, 12, 22]
+
+4. Son birleşim:
+[11, 16, 21] + [8, 12, 22] → Merge işlemi:
+
+Karşılaştırarak sıralı birleşim:
+→ [8, 11, 12, 16, 21, 22]
+
+Sonuç:
+Sıralanmış dizi:
+[8, 11, 12, 16, 21, 22]
+
+Big-O Gösterimi:
+En iyi durum (Best Case): O(n log n)
+
+Ortalama durum (Average Case): O(n log n)
+
+En kötü durum (Worst Case): O(n log n)
+
+Merge Sort her zaman O(n log n) karmaşıklığa sahiptir çünkü:
+
+Her bölme işlemi log n derinliğinde olur,
+
+Her seviyede n öğe işlenir.
+
+https://academy.patika.dev/courses/veri-yapilari-ve-algoritmalar/merge-sort-proje
